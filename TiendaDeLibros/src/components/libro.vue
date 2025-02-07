@@ -19,10 +19,11 @@
         <div class="col-8">
           <h3 class="text-black fs-4 fw-bold text-uppercase">{{libro.titulo}}</h3>
           <p>{{ libro.descripcion }}</p>
+          <p><b>Autor: </b>{{ libro.autor }}</p>
+          <p><b>Editorial: </b>{{ libro.editorial }}</p>
           <p class="fw-black text-primary fs-3">Lps {{libro.precio}}</p>
           <button type="button" 
             class="btn btn-dark w-100" 
-            v-on:click="incrementar"
             @click="$emit('agregar-carrito', libro)">
             Agregar al Carrito
           </button>
